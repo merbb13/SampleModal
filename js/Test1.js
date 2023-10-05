@@ -6,9 +6,9 @@
    const dropdown4 = document.getElementById("quantity");
    const notes = document.getElementById("notes");
    const inputName = document.getElementById('name');
-   const email = document.getElementById('email');
-   const phone =  document.getElementById('phone');
-   const x = document.getElementById("pdf");
+   var email = document.getElementById('email');
+   var phone =  document.getElementById('phone');
+   var x = document.getElementById("pdf");
    const ddown3 = document.getElementById("ddown3");
    var currentStep = 1;
    var totalSteps = 3; // set the total number of steps in the form
@@ -317,9 +317,9 @@
     
     function IsValidEmail(email) {
       //Check minimum valid length of an Email.
-      /*if (email.length == 0) {
+      if (email.length == 0) {
           return false;
-      }*/
+      }
       //If whether email has @ character.
       if (email.indexOf("@") == -1) {
           return false;
@@ -345,13 +345,15 @@
       }
 
       return true;
-    };
+    }
   
   function ValidateEmail() {
     var email = document.getElementById("email").value;
     var lblError = document.getElementById("lblError");
     if (!IsValidEmail(email)) {
       lblError.innerText = "Invalid email address.";
+    } else {
+      document.getElementById("lblError").innerText="";
     }
     
 }

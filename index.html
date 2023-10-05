@@ -65,7 +65,6 @@
           <!--<div class="col-lg-4">
                   <img class="d-block w-100 vh-100 img-fluid" style="background-repeat: repeat-x;"src="C:\Users\Mervin\Desktop\HTML Files\fluid1.png" >
                 </div> -->
-          <img class="img-fluid" src="./Assets/Logo-Dark.png" width="100px">
           <button type="button" class="btn-close float-end pt-1" data-bs-dismiss="modal" alt="Close" id="close"
             onclick="clearAll()"></button>
           <div class="col-lg-12 p-2">
@@ -162,10 +161,9 @@
             <div id="step3" class="p-0" style="width: 100%;">
               <div class="col-lg-12">
                 <div class="text-align">
-                  <h4 class="text-end">The Studio Bridge</h4>
-                  <p class="text-end my-1" style="color: gray; font-size: 70%;">17 San Miguel Ave, Unit 1810 Hanston
-                    Square Building, Ortigas Centre, Pasig, 1605 Metro Manila</p>
-                  <p class="text-end my-1" style="color: gray; font-size: 70%;">thestudiobridge.com</p>
+                  <h4 class="text-end">Company Name</h4>
+                  <p class="text-end my-1" style="color: gray; font-size: 70%;">Address Here</p>
+                  <p class="text-end my-1" style="color: gray; font-size: 70%;">companywebsite.com</p>
                   <p class="text-end my-1" style="color: gray; font-size: 70%;">+63 977 192 0257</p>
                   <hr style="height: 2px">
                   <p class="text-start my-1" style="color: gray; font-size: 70%;">Quotation for:</p>
@@ -236,14 +234,14 @@
         putOnlyUsedFonts: true
       });
       pdf.setFontSize(20);
-      pdf.text("The Studio Bridge", 150, 20);
+      pdf.text("Company Name", 155, 20);
       pdf.setFontSize(10);
       pdf.setTextColor(128, 128, 128);
-      pdf.text("17 San Miguel Ave, Unit 1810 Hanston Square Building, Ortigas Centre, Pasig, 1605 Metro Manila", 53, 30);
-      pdf.text("thestudiobridge.com", 175, 35);
+      pdf.text("Address Here", 184, 30);
+      pdf.text("companywebsite.com", 172, 35);
       pdf.setFontSize(10);
       pdf.setTextColor(128, 128, 128);
-      pdf.text("+63 977 192 0257", 178, 40);
+      pdf.text("+63 915 456 7890", 178, 40);
 
       pdf.line(205, 45, 10, 45); //45
 
